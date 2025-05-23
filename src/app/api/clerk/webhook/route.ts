@@ -12,7 +12,7 @@ export const POST = async (req: Request) => {
 
     console.log(Object.keys(db))
 
-    await db.user.create({
+    await db.User.create({
         data: {
             id : Userid,
             emailAddress : emailAddress,
